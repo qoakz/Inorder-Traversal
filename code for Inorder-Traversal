@@ -1,0 +1,16 @@
+//Implementation of Inorder Traversal
+
+class solution{
+    List<Integer> L=new ArrayList<>();
+    public List<Integer> InorderTraversal(TreeNode root){
+        if(root==null){
+            return L;
+        }
+        InorderTaversal(root.left);
+        L.add(root.value);
+        InorderTraversal(root.right);
+    }
+        
+        
+    
+}
